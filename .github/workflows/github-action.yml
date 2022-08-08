@@ -31,8 +31,8 @@ jobs:
           npm install
       - name: Mend Unified Agent Scan
         env:
-          WS_APIKEY: ${{secrets.WS_APIKEY}}
-          WS_USERKEY: ${{secrets.WS_USERKEY}}
+          WS_APIKEY: ${{secrets.APIKEY}}
+          WS_USERKEY: ${{secrets.USERKEY}}
           WS_PRODUCTNAME: GH_${{github.event.repository.name}}
           WS_PROJECTNAME: ${{github.ref}}_Prioritize
           WS_WSS_URL: https://saas-eu.mend.io/agent
