@@ -35,6 +35,7 @@ jobs:
           WS_USERKEY: ${{secrets.USERKEY}}
           WS_PRODUCTNAME: GH_${{github.event.repository.name}}
           WS_PROJECTNAME: ${{github.ref}}_Prioritize
+          WS_WSS_URL: https://saas-eu.mend.io/agent
           WS_ENABLEIMPACTANALYSIS: true
           WS_REQUIREKNOWNSHA1: false
           WS_RESOLVEALLDEPENDENCIES: false
